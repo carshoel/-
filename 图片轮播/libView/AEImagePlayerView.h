@@ -41,8 +41,8 @@ typedef enum {
 /**
  * 首次要显示的角标
  */
-@property (nonatomic, assign)int currentIndext;
 @property (nonatomic, assign,readonly)int showIndext;
+@property (nonatomic, assign)int currentIndext;
 
 /**
  * 是否自动轮播

@@ -73,6 +73,7 @@
 
 //图片轮播器代理
 - (void)imagePlayerView:(AEImagePlayerView *)playerview didClickIndex:(long long)index{
+    
     _clickResultL.text = [NSString stringWithFormat:@"点击了 第%lld张图",index];
 }
 

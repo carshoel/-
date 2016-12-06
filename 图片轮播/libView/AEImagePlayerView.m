@@ -537,7 +537,7 @@ typedef enum {
     //通知代理
     if ([self.delegate respondsToSelector:@selector(imagePlayerView:didClickIndex:)]) {
         //取出点击的图片等tag
-        long long index = (view == self.currentImageView) ? self.currentImageView.tag : self.willAppearImageView.tag;
+        long long index = self.currentImageView.tag;//(1) ? self.currentImageView.tag : self.willAppearImageView.tag;
         [self.delegate imagePlayerView:self didClickIndex:index];
     }
 }
